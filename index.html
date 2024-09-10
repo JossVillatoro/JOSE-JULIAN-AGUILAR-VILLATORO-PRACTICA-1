@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <title>Calculadora Básica</title>
+</head>
+
+<body>
+
+    <div class="fondo_rectangular">
+        <h1><span class="titulo_principal">PRÁCTICA1-<span class="titulo_principal">CALCULADORA BÁSICA</span></a></h1>
+    </div>
+    <div class="fondo_gris">
+        <form>
+            <label for="numero1">Num 1: </label>
+            <input type="number" id="numero1" required>
+
+            <br>
+
+            <label for="numero2">Num 2:</label>
+            <input type="number" id="numero2" required>
+
+            <br>
+
+            <select id="operacion" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="sumar">Sumar</option>
+                <option value="restar">Restar</option>
+                <option value="multiplicar">Multiplicar</option>
+                <option value="dividir">Dividir</option>
+            </select>
+
+
+            <button type="button" id="botonCalcular">Ejecutar</button>
+
+            <br>
+
+            <label for="resultado">Resultado:</label>
+            <input type="text" id="resultado" readonly>
+        </form>
+    </div>
+
+    <script src="jquery-3.7.1.js"></script>
+    <script src="scriptJQuery.js"></script>
+
+</body>
+
+</html>
